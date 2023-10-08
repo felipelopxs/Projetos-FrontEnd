@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amigo Canino</title>
+
+        <link rel="icon" type="image/x-icon" href="src/img/logo.png">
+        <link rel="stylesheet" href="src/css/style-home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+            <img id="logo" src="src/img/logo.png" alt="Logo principal">
+        </a>
+            <div>
+                <h1 class="titulo-principal"> AMIGO CANINO </h1>
+                <h2 class="titulo-secundario"> ASSOCIAÇÃO PROTETORA DE ANIMAIS
+                    ABANDONADOS </h2>
+            </div>
+        </header>
+        <nav>
+            <a class="adotar" href="adotar.html">Quero adotar</a>
+            <a class="apadrinhar" href = 'apadrinhar.html'>Quero apadrinhar</a>
+            <a class="ajudar" href="ajudar.html">Quero ajudar</a>
+        </nav>
+        <div class="img-apadrinhar">
+            <img src="src/img/apadrinhe.png" alt="apadrinhe um cachorro">
+        </div>
+        <main>
+            <div class="formulario">
+                <h3>Preencha o formulário para adoção dos animais: </h3>
+            </div>
+        
+            <form>
+                <label for="nomesobrenome">Nome Completo</label>
+                <input type="text" id="nomesobrenome" class="input-padrao"
+                    required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required
+                    placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="telefone" id="telefone" class="input-padrao"
+                    required placeholder="(XX) XXXX-XXXXX">
+
+                <label for="textarea">Porque você escolheu apadrinhar um dos nossos animais ?</label>
+                <textarea cols="70" rows="10" id="Mensagem"
+                    class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>Como Prefere o nosso contato ?</legend>
+                    <label for="radio-email"><input type="radio" name="contato"
+                            value="email"
+                            id="radio-email">Email</label>
+
+
+                    <label for="radio-telefone"><input type="radio"
+                            name="contato" value="telefone"
+                            id="radio-telefone">Telefone</label>
+
+
+                    <label for="radio-whatsapp"><input type="radio"
+                            name="contato" value="whatsapp"
+                            id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Qual o melhor horário para contato ?</legend>
+                    <select id="turno">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"> <input type="checkbox" checked>
+                    Gostaria de receber
+                    nossas
+                    novidades por email ? </label>
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+        </main>
+            <section class="mapa">
+                <div class="mapa-conteudo">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.111403741763!2d-43.94167122396823!3d-19.919709737989702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699fcab055555%3A0x45c2908d5e7df9e0!2sAv.%20Amazonas%2C%20475%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG%2C%2030180-001!5e0!3m2!1spt-BR!2sbr!4v1695944317680!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img class="img-footer" src="src/img/logo.png" />
+            <p class="copyright">&copy; Copyright Amigo Canino - 2023 </p>
+        </footer>
+        </main>
+        
+    </body>
+</html>
